@@ -10,7 +10,7 @@ int function_sum(int x, int y) {
 }
 
 int main(void){
-  a=1;
+  a=2;
   b=3;
   c = function_sum(a, b);
   
