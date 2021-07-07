@@ -3,6 +3,7 @@ int b;
 int c;
 int d;
 int e;
+int f;
 
 int function_sum(int x, int y) {
   int sum;
