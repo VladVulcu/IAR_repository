@@ -1,0 +1,86 @@
+[
+  {
+    "ID": "c:@a",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "a",
+    "location": {
+      "column": "5",
+      "line": "1",
+      "path": "C:\\Users\\vulcu\\Desktop\\MQ_Summer_Internship_2021\\Project\\main.c"
+    },
+    "name": "a",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@b",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "b",
+    "location": {
+      "column": "5",
+      "line": "2",
+      "path": "C:\\Users\\vulcu\\Desktop\\MQ_Summer_Internship_2021\\Project\\main.c"
+    },
+    "name": "b",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@c",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "c",
+    "location": {
+      "column": "5",
+      "line": "3",
+      "path": "C:\\Users\\vulcu\\Desktop\\MQ_Summer_Internship_2021\\Project\\main.c"
+    },
+    "name": "c",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@function_sum",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int function_sum(int, int)",
+    "location": {
+      "column": "5",
+      "line": "5",
+      "path": "C:\\Users\\vulcu\\Desktop\\MQ_Summer_Internship_2021\\Project\\main.c"
+    },
+    "name": "function_sum",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@62@F@function_sum@sum",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sum",
+    "location": {
+      "column": "7",
+      "line": "6",
+      "path": "C:\\Users\\vulcu\\Desktop\\MQ_Summer_Internship_2021\\Project\\main.c"
+    },
+    "name": "sum",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "12",
+      "path": "C:\\Users\\vulcu\\Desktop\\MQ_Summer_Internship_2021\\Project\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  }
+]

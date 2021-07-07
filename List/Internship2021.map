@@ -1,0 +1,462 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V6.6.1.103                                         #
+#                                                                              #
+#           Link time     =  07/Jul/2021  12:36:37                             #
+#           Target CPU    =  A90                                               #
+#           List file     =  C:\Users\vulcu\Desktop\MQ_Summer_Internship_2021\ #
+#                            Project\Debug\List\Internship2021.map             #
+#           Output file 1 =  C:\Users\vulcu\Desktop\MQ_Summer_Internship_2021\ #
+#                            Project\Debug\Exe\Internship2021.d90              #
+#                            Format: ubrof10                                   #
+#                            UBROF version 10.0.6                              #
+#                            Using library modules for C-SPY (-rt)             #
+#           Command line  =  -f C:\Users\vulcu\AppData\Local\Temp\EW2813.tmp   #
+#                            (C:\Users\vulcu\Desktop\MQ_Summer_Internship_2021 #
+#                            \Project\Debug\Obj\main.r90                       #
+#                            -o                                                #
+#                            C:\Users\vulcu\Desktop\MQ_Summer_Internship_2021\ #
+#                            Project\Debug\Exe\Internship2021.d90              #
+#                            -l                                                #
+#                            C:\Users\vulcu\Desktop\MQ_Summer_Internship_2021\ #
+#                            Project\Debug\List\Internship2021.map             #
+#                            -xms                                              #
+#                            "-IC:\Program Files (x86)\IAR Systems\Embedded Wo #
+#                            rkbench 8.4\avr\LIB\\"                            #
+#                            -f                                                #
+#                            "C:\Program Files (x86)\IAR Systems\Embedded Work #
+#                            bench 8.4\avr\src\template\cfgm324pb.xcl"         #
+#                            (-D_..X_INTVEC_SIZE=CC -D_..X_FLASH_END=7FFF      #
+#                            -D_..X_FLASH_NEND=_..X_FLASH_END                  #
+#                            -D_..X_SRAM_BASE=100 -D_..X_SRAM_TBASE=0          #
+#                            -D_..X_SRAM_TSIZE=0 -D_..X_SRAM_END=8FF           #
+#                            -D_..X_EXT_SRAM_BASE=_..X_SRAM_END                #
+#                            -D_..X_EXT_SRAM_SIZE=0                            #
+#                            -D_..X_EXT_ROM_BASE=_..X_SRAM_END                 #
+#                            -D_..X_EXT_ROM_SIZE=0                             #
+#                            -D_..X_EXT_NV_BASE=_..X_SRAM_END                  #
+#                            -D_..X_EXT_NV_SIZE=0 -D_..X_EEPROM_START=0        #
+#                            -D_..X_EEPROM_END=3FF) -D_..X_HEAP_SIZE=0         #
+#                            -D_..X_TINY_HEAP_SIZE=0                           #
+#                            -D_..X_NEAR_HEAP_SIZE=20 -D_..X_FAR_HEAP_SIZE=0   #
+#                            -D_..X_HUGE_HEAP_SIZE=0 -D_..X_CSTACK_SIZE=20     #
+#                            -D_..X_RSTACK_SIZE=20                             #
+#                            -D_..X_FLASH_CODE_END=_..X_FLASH_END -f           #
+#                            "C:\Program Files (x86)\IAR Systems\Embedded Work #
+#                            bench 8.4\avr\src\template\cfg3soim.xcl"          #
+#                            (-ca90 -w29                                       #
+#                            -Z(CODE)INTVEC=0-(_..X_INTVEC_SIZE-1)             #
+#                            -Z(CODE)TINY_F=_..X_FLASH_BASE-FF                 #
+#                            -Z(CODE)NEAR_F=_..X_FLASH_BASE-_..X_FLASH_NEND    #
+#                            -Z(CODE)SWITCH=_..X_FLASH_BASE-_..X_FLASH_NEND    #
+#                            -Z(CODE)DIFUNCT=_..X_FLASH_BASE-_..X_FLASH_NEND   #
+#                            -Z(CODE)CODE=_..X_FLASH_BASE-_..X_FLASH_END       #
+#                            -P(CODE)FAR_F=[_..X_FLASH_BASE-_..X_FLASH_END]/10 #
+#                            000                                               #
+#                            -Z(CODE)INITTAB=_..X_FLASH_BASE-_..X_FLASH_END    #
+#                            -Z(CODE)HUGE_F=_..X_FLASH_BASE-_..X_FLASH_END     #
+#                            -Z(CODE)TINY_ID=_..X_FLASH_BASE-_..X_FLASH_END    #
+#                            -Z(CODE)NEAR_ID=_..X_FLASH_BASE-_..X_FLASH_END    #
+#                            -Z(CODE)CHECKSUM#_..X_FLASH_END                   #
+#                            -Z(DATA)TINY_I,TINY_Z,TINY_N=_..X_SRAM_TBASE:+_.. #
+#                            X_SRAM_TSIZE                                      #
+#                            -Z(DATA)CSTACK+_..X_CSTACK_SIZE=_..X_CSTACK_BASE- #
+#                            _..X_CSTACK_END                                   #
+#                            -Z(DATA)HEAP+_..X_HEAP_SIZE=_..X_SRAM_BASE-_..X_S #
+#                            RAM_END                                           #
+#                            -Z(DATA)IOSTREAM_N#_..X_SRAM_BASE-_..X_SRAM_END   #
+#                            -Z(DATA)NEAR_HEAP+_..X_NEAR_HEAP_SIZE=_..X_SRAM_B #
+#                            ASE-_..X_SRAM_END                                 #
+#                            -Z(DATA)RSTACK+_..X_RSTACK_SIZE=_..X_RSTACK_BASE- #
+#                            _..X_RSTACK_END                                   #
+#                            -Z(DATA)NEAR_I,NEAR_Z,NEAR_N=_..X_SRAM_BASE-_..X_ #
+#                            SRAM_END                                          #
+#                            -Z(XDATA)EEPROM_I,EEPROM_N=_..X_EEPROM_START-_..X #
+#                            _EEPROM_END)                                      #
+#                            -D_..X_FLASH_BASE=_..X_INTVEC_SIZE                #
+#                            -h'1895'(CODE)0-(_..X_INTVEC_SIZE-1)              #
+#                            --global_fill -D_..X_CSTACK_BASE=_..X_SRAM_BASE   #
+#                            -D_..X_CSTACK_END=_..X_SRAM_END                   #
+#                            -D_..X_RSTACK_BASE=_..X_SRAM_BASE                 #
+#                            -D_..X_RSTACK_END=_..X_SRAM_END -rt -s            #
+#                            __program_start                                   #
+#                            "C:\Program Files (x86)\IAR Systems\Embedded Work #
+#                            bench 8.4\avr\LIB\DLIB\dlAVR-3s-ec_mul-sf-n.r90") #
+#                                                                              #
+#                           Copyright (C) 1987-2019 IAR Systems AB.            #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at : CODE      00000126  Relocatable, from module : ?C_STARTUP
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  R10                        = REG
+  R11                        = REG
+  R4                         = REG
+  R5                         = REG
+  R6                         = REG
+  R7                         = REG
+  R8                         = REG
+  R9                         = REG
+  __64bit_doubles            = disabled
+  __Heap_Handler             = Basic
+  __SystemLibrary            = DLib
+  __cpu                      = 3
+  __cpu_name                 = ATmega324PB
+  __dlib_file_descriptor     = 0
+  __dlib_full_locale_support = 0
+  __enhanced_core            = enabled
+  __has_elpm                 = false
+  __memory_model             = 2
+  __rt_version               = 3
+  __tiny_avr                 = false
+  __vtable_memory            = __nearflash
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+                  There are no automatic symbol redirections.
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _..X_RSTACK_END         000008FF 
+           _..X_RSTACK_BASE        00000100 
+           _..X_CSTACK_END         000008FF 
+           _..X_CSTACK_BASE        00000100 
+           _..X_FLASH_BASE         000000CC 
+           _..X_FLASH_CODE_END     00007FFF 
+           _..X_RSTACK_SIZE        00000020 
+           _..X_CSTACK_SIZE        00000020 
+           _..X_HUGE_HEAP_SIZE     00000000 
+           _..X_FAR_HEAP_SIZE      00000000 
+           _..X_NEAR_HEAP_SIZE     00000020 
+           _..X_TINY_HEAP_SIZE     00000000 
+           _..X_HEAP_SIZE          00000000 
+           _..X_EEPROM_END         000003FF 
+           _..X_EEPROM_START       00000000 
+           _..X_EXT_NV_SIZE        00000000 
+           _..X_EXT_NV_BASE        000008FF 
+           _..X_EXT_ROM_SIZE       00000000 
+           _..X_EXT_ROM_BASE       000008FF 
+           _..X_EXT_SRAM_SIZE      00000000 
+           _..X_EXT_SRAM_BASE      000008FF 
+           _..X_SRAM_END           000008FF 
+           _..X_SRAM_TSIZE         00000000 
+           _..X_SRAM_TBASE         00000000 
+           _..X_SRAM_BASE          00000100 
+           _..X_FLASH_NEND         00007FFF 
+           _..X_FLASH_END          00007FFF 
+           _..X_INTVEC_SIZE        000000CC 
+    *************************************************************************
+
+  FILE NAME : C:\Users\vulcu\Desktop\MQ_Summer_Internship_2021\Project\Debug\Obj\main.r90
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+NEAR_Z
+  Relative segment, address: DATA 00000140 - 00000141 (0x2 bytes), align: 0
+  Segment part 7.             Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           a                       00000140 
+    -------------------------------------------------------------------------
+NEAR_Z
+  Relative segment, address: DATA 00000142 - 00000143 (0x2 bytes), align: 0
+  Segment part 9.             Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           b                       00000142 
+    -------------------------------------------------------------------------
+NEAR_Z
+  Relative segment, address: DATA 00000144 - 00000145 (0x2 bytes), align: 0
+  Segment part 10.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           c                       00000144 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 000000CC - 000000D1 (0x6 bytes), align: 1
+  Segment part 11.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           function_sum            000000CC 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 000000D2 - 00000109 (0x38 bytes), align: 1
+  Segment part 12.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    000000D2        ?cstartup_call_main (?C_STARTUP)
+               calls direct
+    -------------------------------------------------------------------------
+ABSOLUTE
+  Relative segment, address: DATA 0000001F, align: 0
+  Segment part 1. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __?EECR                 0000001F 
+    -------------------------------------------------------------------------
+ABSOLUTE
+  Relative segment, address: DATA 00000020, align: 0
+  Segment part 2. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __?EEDR                 00000020 
+    -------------------------------------------------------------------------
+ABSOLUTE
+  Relative segment, address: DATA 00000021, align: 0
+  Segment part 3. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __?EEARL                00000021 
+    -------------------------------------------------------------------------
+ABSOLUTE
+  Relative segment, address: DATA 00000022, align: 0
+  Segment part 4. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __?EEARH                00000022 
+    -------------------------------------------------------------------------
+INITTAB
+  Relative segment, address: CODE 0000019E - 000001A3 (0x6 bytes), align: 0
+  Segment part 8.             Intra module refs:   a
+                                                   b
+                                                   c
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?<Segment init: NEAR_Z>
+                                   0000019E 
+
+    *************************************************************************
+
+  FILE NAME : C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\avr\LIB\DLIB\dlAVR-3s-ec_mul-sf-n.r90
+  LIBRARY MODULE, NAME : ?__dbg_break
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 0000010A - 0000010B (0x2 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __DebugBreak            0000010A        __exit (?__exit)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?__exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 0000010C - 00000121 (0x16 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __exit                  0000010C        Segment part 5 (?_exit)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?_exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 00000122, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _exit                   00000122        ?cstartup_call_main (?C_STARTUP)
+                                                   exit (?exit)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 00000122 - 00000125 (0x4 bytes), align: 1
+  Segment part 5.             Intra module refs:   _exit
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?RESET
+
+  SEGMENTS IN THE MODULE
+  ======================
+INTVEC
+  Common segment, address: CODE 00000000 - 00000003 (0x4 bytes), align: 1
+  Segment part 0. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?RESET                  00000000        Segment part 2 (?C_STARTUP)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?C_STARTUP
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 00000126, align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __program_start         00000126        Absolute parts (?ABS_ENTRY_MOD)
+           ?C_STARTUP              00000126        ?RESET (?RESET)
+           __RESTART               00000126 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 00000126 - 00000131 (0xc bytes), align: 1
+  Segment part 5.             Intra module refs:   Segment part 2
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 00000132 - 00000135 (0x4 bytes), align: 1
+  Segment part 7.             Intra module refs:   Segment part 5
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?call_low_level_init    00000132 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 00000136 - 0000013D (0x8 bytes), align: 1
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?need_segment_init      00000136        ?<Segment init: NEAR_Z> (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0000013E - 00000149 (0xc bytes), align: 1
+  Segment part 11.            Intra module refs:   ?call_low_level_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cstartup_call_main     0000013E 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 0000014A - 0000014D (0x4 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           exit                    0000014A        ?cstartup_call_main (?C_STARTUP)
+               calls direct
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?low_level_init
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 0000014E - 00000151 (0x4 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __low_level_init        0000014E        ?call_low_level_init (?C_STARTUP)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?segment_init
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE 00000152 - 0000015D (0xc bytes), align: 1
+  Segment part 3.             Intra module refs:   __segment_init
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           __memclr                00000152 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0000015E - 00000169 (0xc bytes), align: 1
+  Segment part 4.             Intra module refs:   __segment_init
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           __flashcpy              0000015E 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE 0000016A - 0000019D (0x34 bytes), align: 1
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __segment_init          0000016A        ?need_segment_init (?C_STARTUP)
+               calls direct
+
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?FILLER_BYTES
+
+  SEGMENTS IN THE MODULE
+  ======================
+INTVEC
+  Common segment, address: CODE 00000000 - 00000003 (0x4 bytes), align: 0
+  Segment part 1.
+    -------------------------------------------------------------------------
+?FILL1
+  Relative segment, address: CODE 00000004 - 000000CB (0xc8 bytes), align: 0
+  Segment part 0.
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+INTVEC               CODE          00000000 - 00000003           4   com    1
+?FILL1               CODE          00000004 - 000000CB          C8   rel    0
+CODE                 CODE          000000CC - 0000019D          D2   rel    1
+INITTAB              CODE          0000019E - 000001A3           6   rel    0
+ABSOLUTE             DATA               0000001F                     rel    0
+                     DATA               00000020                   
+                     DATA               00000021                   
+                     DATA               00000022                   
+CSTACK               DATA          00000100 - 0000011F          20   dse    0
+RSTACK               DATA          00000120 - 0000013F          20   dse    0
+NEAR_I               DATA               00000140                     dse    0
+NEAR_Z               DATA          00000140 - 00000145           6   rel    0
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 220 bytes of CODE memory (+ 200 range fill )
+  70 bytes of DATA memory
+
+Errors: none
+Warnings: none
+
