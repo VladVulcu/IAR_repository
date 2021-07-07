@@ -2,6 +2,7 @@ int a;
 int b;
 int c;
 int d;
+int e;
 
 int function_sum(int x, int y) {
   int sum;
